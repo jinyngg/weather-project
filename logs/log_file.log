@@ -1,0 +1,171 @@
+[2023-05-26 01:54:24:455][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [./logs/%d{yyyy-MM-dd}_%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [filter] of type [ch.qos.logback.filter.thresholdFilter] java.lang.ClassNotFoundException: ch.qos.logback.filter.thresholdFilter
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:20 - no applicable action for [level], current ElementPath  is [[configuration][appender][filter][level]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.zerobase.weather.WeatherApplication.main(WeatherApplication.java:14)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [./logs/%d{yyyy-MM-dd}_%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [filter] of type [ch.qos.logback.filter.thresholdFilter] java.lang.ClassNotFoundException: ch.qos.logback.filter.thresholdFilter
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:20 - no applicable action for [level], current ElementPath  is [[configuration][appender][filter][level]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 18 common frames omitted
+[2023-05-26 01:56:16:424][main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [filter] of type [ch.qos.logback.filter.thresholdFilter] java.lang.ClassNotFoundException: ch.qos.logback.filter.thresholdFilter
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:20 - no applicable action for [level], current ElementPath  is [[configuration][appender][filter][level]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:344)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.zerobase.weather.WeatherApplication.main(WeatherApplication.java:14)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [filter] of type [ch.qos.logback.filter.thresholdFilter] java.lang.ClassNotFoundException: ch.qos.logback.filter.thresholdFilter
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:20 - no applicable action for [level], current ElementPath  is [[configuration][appender][filter][level]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 18 common frames omitted
+[2023-05-26 01:56:45:446][main] INFO  c.z.weather.WeatherApplication - Starting WeatherApplication using Java 1.8.0_361 on DESKTOP-364MVE9 with PID 14760 (E:\workspace\weather\build\classes\java\main started by jyjang in E:\workspace\weather)
+[2023-05-26 01:56:45:448][main] INFO  c.z.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 01:56:45:857][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 01:56:45:897][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+[2023-05-26 01:56:46:1217][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-05-26 01:56:46:1222][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:56:46:1222][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-05-26 01:56:46:1222][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-05-26 01:56:46:1349][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-05-26 01:56:46:1349][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+[2023-05-26 01:56:46:1445][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-05-26 01:56:46:1743][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-05-26 01:56:46:1775][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 01:56:46:1805][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 01:56:46:1909][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 01:56:47:1985][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-05-26 01:56:47:2356][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 01:56:47:2364][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 01:56:47:2655][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 01:56:47:2886][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:56:47:2897][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-05-26 01:56:47:2907][main] INFO  c.z.weather.WeatherApplication - Started WeatherApplication in 2.785 seconds (JVM running for 3.259)
+[2023-05-26 01:57:20:35517][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 01:57:20:35518][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-05-26 01:57:20:35523][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-05-26 01:57:23:448][main] INFO  c.z.weather.WeatherApplication - Starting WeatherApplication using Java 1.8.0_361 on DESKTOP-364MVE9 with PID 10140 (E:\workspace\weather\build\classes\java\main started by jyjang in E:\workspace\weather)
+[2023-05-26 01:57:23:450][main] INFO  c.z.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 01:57:24:859][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 01:57:24:898][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+[2023-05-26 01:57:24:1217][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-05-26 01:57:24:1223][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:57:24:1223][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-05-26 01:57:24:1223][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-05-26 01:57:24:1335][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-05-26 01:57:24:1335][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 854 ms
+[2023-05-26 01:57:24:1429][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-05-26 01:57:25:1767][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-05-26 01:57:25:1798][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 01:57:25:1829][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 01:57:25:1932][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 01:57:25:2006][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-05-26 01:57:25:2381][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 01:57:25:2389][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 01:57:26:2686][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 01:57:26:2901][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:57:26:2913][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-05-26 01:57:26:2923][main] INFO  c.z.weather.WeatherApplication - Started WeatherApplication in 2.798 seconds (JVM running for 3.269)
+[2023-05-26 01:58:12:48898][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 01:58:12:48899][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-05-26 01:58:12:48903][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-05-26 01:58:20:455][main] INFO  c.z.weather.WeatherApplication - Starting WeatherApplication using Java 1.8.0_361 on DESKTOP-364MVE9 with PID 14836 (E:\workspace\weather\build\classes\java\main started by jyjang in E:\workspace\weather)
+[2023-05-26 01:58:20:457][main] INFO  c.z.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 01:58:20:876][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 01:58:20:919][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+[2023-05-26 01:58:20:1243][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-05-26 01:58:20:1249][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:58:20:1249][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-05-26 01:58:20:1249][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-05-26 01:58:20:1367][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-05-26 01:58:20:1367][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 879 ms
+[2023-05-26 01:58:21:1461][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-05-26 01:58:21:1759][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-05-26 01:58:21:1791][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 01:58:21:1820][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 01:58:21:1922][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 01:58:21:1997][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-05-26 01:58:21:2366][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 01:58:21:2374][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 01:58:22:2665][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 01:58:22:2900][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-05-26 01:58:22:2912][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-05-26 01:58:22:2922][main] INFO  c.z.weather.WeatherApplication - Started WeatherApplication in 2.791 seconds (JVM running for 3.274)
+[2023-05-26 02:01:23:184415][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 02:01:23:184417][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-05-26 02:01:23:184420][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-05-26 02:01:28:453][main] INFO  c.z.weather.WeatherApplication - Starting WeatherApplication using Java 1.8.0_361 on DESKTOP-364MVE9 with PID 13808 (E:\workspace\weather\build\classes\java\main started by jyjang in E:\workspace\weather)
+[2023-05-26 02:01:28:455][main] INFO  c.z.weather.WeatherApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-05-26 02:01:28:857][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-05-26 02:01:28:898][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+[2023-05-26 02:01:29:1211][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2023-05-26 02:01:29:1216][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2023-05-26 02:01:29:1217][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-05-26 02:01:29:1217][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-05-26 02:01:29:1335][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-05-26 02:01:29:1335][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 850 ms
+[2023-05-26 02:01:29:1429][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-05-26 02:01:29:1726][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-05-26 02:01:29:1758][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-05-26 02:01:29:1788][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-26 02:01:29:1890][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-26 02:01:29:1964][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[2023-05-26 02:01:30:2349][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-26 02:01:30:2357][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 02:01:30:2640][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-05-26 02:01:30:2868][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2023-05-26 02:01:30:2880][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2023-05-26 02:01:30:2889][main] INFO  c.z.weather.WeatherApplication - Started WeatherApplication in 2.765 seconds (JVM running for 3.234)
+[2023-05-26 02:01:55:27933][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-05-26 02:01:55:27933][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-05-26 02:01:55:27934][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-05-26 02:01:55:27977][http-nio-8080-exec-2] INFO  c.z.weather.WeatherApplication - === started to create diary ===
+[2023-05-26 02:01:56:28247][http-nio-8080-exec-2] INFO  c.z.weather.WeatherApplication - === end to create diary ===
+[2023-05-26 02:05:14:226375][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-05-26 02:05:14:226376][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-05-26 02:05:14:226381][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
