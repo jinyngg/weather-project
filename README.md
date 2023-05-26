@@ -83,5 +83,14 @@ dependencies {
 - ✅ 매일 새벽 1시에 날씨 데이터를 외부 API 에서 받아다 DB에 저장해두는 로직을 구현 ````완료````
 - ✅ logback 을 이용하여 프로젝트에 로그 이력 저장 ````완료````
 - ✅ ExceptionHandler 을 이용한 예외처리 ````완료````
-- ✅ swagger 을 이용하여 API documentation
+- ✅ Swagger 을 이용하여 API documentation ````완료````
+
+````swagger````
+![image](https://github.com/jinyngg/weather-project/assets/96164211/91fdbbce-48a7-46f2-82f7-11144c5c83fd)
+
+````Create Diary````
+![image](https://github.com/jinyngg/weather-project/assets/96164211/2030737a-7695-4caa-a86a-de5ac47f5324)
+
+````Read Diary````
+![image](https://github.com/jinyngg/weather-project/assets/96164211/248470fd-5d9d-4494-896f-13fee46ffe79)
 
