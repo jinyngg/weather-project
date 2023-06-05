@@ -1,10 +1,9 @@
 
 package com.zerobase.weather.service;
 
-import com.zerobase.weather.WeatherApplication;
 import com.zerobase.weather.domain.DateWeather;
 import com.zerobase.weather.domain.Diary;
-import com.zerobase.weather.error.InvalidDate;
+import com.zerobase.weather.exception.InvalidDateException;
 import com.zerobase.weather.repository.DateWeatherRepository;
 import com.zerobase.weather.repository.DiaryRepository;
 import lombok.RequiredArgsConstructor;
@@ -39,7 +38,7 @@ public class DiaryService {
     private final DiaryRepository diaryRepository;
     private final DateWeatherRepository dateWeatherRepository;
 
-    private static final Logger logger = LoggerFactory.getLogger(WeatherApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(DiaryService.class);
 
     /**
      * @Scheduled(cron = "0 0 1 * * *") => 매일 새벽 1시에 saveWeatherDate() 실행
@@ -149,6 +148,10 @@ public class DiaryService {
         }
         HashMap<String, Object> resultMap = new HashMap<>();
 
+        if (jsonObject == null) {
+            throw new RuntimeException("JsonObject is null");
+        }
+
         JSONObject mainData = (JSONObject) jsonObject.get("main");
         resultMap.put("temp", mainData.get("temp"));
         JSONArray weatherArray = (JSONArray) jsonObject.get("weather");
@@ -164,7 +167,7 @@ public class DiaryService {
     public List<Diary> readDiary(LocalDate date) {
         logger.debug("=== read diary ===");
         if (date.isAfter(LocalDate.ofYearDay(3050, 1))) {
-            throw new InvalidDate();
+            throw new InvalidDateException();
         }
         return diaryRepository.findAllByDate(date);
     }
